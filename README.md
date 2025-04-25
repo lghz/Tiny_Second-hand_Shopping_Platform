@@ -155,7 +155,7 @@ UPDATE users SET role='admin' WHERE username='관리자아이디';
 
 - `images/` 폴더에 로고(`TSSPlogo.png`, `TSSPlogofull.png`)와 메시지 알림(`new.png`) 이미지를 넣으세요.
 - GD 라이브러리가 없으면 이미지 리사이즈 기능이 제한될 수 있습니다.
-
+- index.php와 같은 경로에 uploads/ 폴더를 생성하세요.(상품 등록 사진 올라감)
 ---
 
 
