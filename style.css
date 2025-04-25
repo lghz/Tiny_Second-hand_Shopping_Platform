@@ -1,0 +1,288 @@
+body {
+    font-family: 'Segoe UI', 'Apple SD Gothic Neo', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    color: #222;
+}
+
+/* 헤더 로고+타이틀 */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 가운데 정렬 */
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.header-logo {
+    height: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+.header-flex h1 {
+    margin: 0 0 0 8px; /* 로고와 h1 사이 8px */
+    padding: 0;
+    font-size: 2.3rem;
+    line-height: 1;
+    text-align: left;
+    flex: 0 1 auto;
+    width: auto;
+}
+
+/* 헤더/네비게이션 */
+header {
+    background: linear-gradient(90deg, #008cba 60%, #00b8a9 100%);
+    color: #fff;
+    padding: 24px 0 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 24px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 22px;
+    color: #fff;
+    background: rgba(0,0,0,0.09);
+    border-radius: 22px;
+    text-decoration: none !important;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+nav a:hover {
+    background: #005f73;
+    color: #fff;
+}
+
+.main-card {
+    max-width: 520px;
+    margin: 48px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+    padding: 38px 32px 34px 32px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #008cba;
+    margin-top: 0;
+}
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.username {
+    color: #00b894;
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+.main-visual {
+    width: 100%;
+    max-width: 340px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 60px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* 테이블 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 30px 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+th, td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+th {
+    background: #f0f8fa;
+    color: #008cba;
+    font-weight: 600;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+tr:hover {
+    background: #f6fbfc;
+}
+
+/* 폼 및 입력 */
+form {
+    margin: 16px 0;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea {
+    width: 96%;
+    padding: 10px 12px;
+    margin: 8px 0 18px 0;
+    border: 1.5px solid #b5d5e6;
+    border-radius: 7px;
+    font-size: 1.05rem;
+    background: #f9f9f9;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
+    border: 1.7px solid #008cba;
+    background: #fff;
+    outline: none;
+}
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* 버튼 */
+button, .button {
+    background: linear-gradient(90deg, #008cba 70%, #00b8a9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 9px 28px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 3px 0;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+    text-decoration: none;
+}
+button:hover, .button:hover {
+    background: #005f73;
+    color: #fff;
+}
+button[style*="background:red"], .button[style*="background:red"] {
+    background: linear-gradient(90deg, #e63946 70%, #ff686b 100%);
+}
+button[style*="background:gray"], .button[style*="background:gray"] {
+    background: #aaa !important;
+    color: #fff !important;
+}
+a.button {
+    text-decoration: none !important;
+}
+
+/* 로그인 박스 크기 */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 220px;
+    max-width: 90%;
+    padding: 8px 10px;
+    margin: 8px 0 14px 0;
+    font-size: 1rem;
+}
+.login-form {
+    text-align: center;
+    max-width: 320px;
+    margin: 34px auto 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 32px 24px 24px 24px;
+}
+
+/* 알림 메시지 */
+p[style*="color:red"], .error {
+    color: #e63946 !important;
+    font-weight: 600;
+}
+p[style*="color:green"], .success {
+    color: #00b894 !important;
+    font-weight: 600;
+}
+
+/* 상품 이미지 */
+.product-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1.5px solid #b5d5e6;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    background: #f5fafd;
+}
+
+/* 차단됨 표시 */
+span[style*="color:green"] {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 800px) {
+    .container, main, table, .main-card {
+        width: 98%;
+        padding: 10px;
+    }
+    th, td {
+        font-size: 0.99em;
+        padding: 9px 5px;
+    }
+    .product-img, .main-visual {
+        width: 95vw;
+        max-width: 320px;
+        height: 95vw;
+        max-height: 320px;
+    }
+    .header-flex {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .header-logo {
+        margin-left: 0;
+        margin-top: 8px;
+        height: 54px;
+    }
+}
+.msg-badge {
+    position: relative;
+    display: inline-block;
+}
+.msg-badge img {
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
