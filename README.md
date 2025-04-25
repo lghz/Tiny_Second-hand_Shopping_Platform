@@ -57,6 +57,7 @@ email VARCHAR(100) UNIQUE,
 password_hash VARCHAR(255),
 role ENUM('user','admin') DEFAULT 'user',
 last_message_check DATETIME DEFAULT NULL,
+
 -- 기타 필요 컬럼
 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
