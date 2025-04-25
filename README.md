@@ -151,7 +151,6 @@ UPDATE users SET role='admin' WHERE username='관리자아이디';
 
 ---
 
-
 ## 기타
 
 - `images/` 폴더에 로고(`TSSPlogo.png`, `TSSPlogofull.png`)와 메시지 알림(`new.png`) 이미지를 넣으세요.
